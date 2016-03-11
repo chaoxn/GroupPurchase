@@ -100,8 +100,7 @@ class RAMItemAnimation: NSObject, RAMItemAnimationProtocol {
     }
     
     func selectedState(icon: UIImageView, textLabel : UILabel) {
-    }
-    
+    }  
 }
 
 
@@ -114,18 +113,8 @@ class AnimationTabBarController: UITabBarController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-        NSNotificationCenter.defaultCenter().addObserver(self, selector: "searchViewControllerDeinit", name: "LFBSearchViewControllerDeinit", object: nil)
     }
-    
-    deinit {
-        NSNotificationCenter.defaultCenter().removeObserver(self)
-    }
-    
-    func searchViewControllerDeinit() {
 
-    }
-    
     func createViewContainers() -> [String: UIView] {
         var containersDict = [String: UIView]()
         
@@ -185,7 +174,6 @@ class AnimationTabBarController: UITabBarController {
                 icon.image = item.image
                 icon.tintColor = UIColor.clearColor()
                 
-                
                 // text
                 let textLabel = UILabel()
                 textLabel.frame = CGRectMake(0, 32, ScreenWidth / CGFloat(items.count), 49 - 32)
@@ -198,7 +186,6 @@ class AnimationTabBarController: UITabBarController {
                 container.addSubview(icon)
                 container.addSubview(textLabel)
                 
-                
                 if let tabBarItem = tabBar.items {
                     let textLabelWidth = tabBar.frame.size.width / CGFloat(tabBarItem.count)
                     textLabel.bounds.size.width = textLabelWidth
@@ -206,7 +193,6 @@ class AnimationTabBarController: UITabBarController {
                 
                 let iconsAndLabels = (icon:icon, textLabel:textLabel)
                 iconsView.append(iconsAndLabels)
-                
                 
                 item.image = nil
                 item.title = ""

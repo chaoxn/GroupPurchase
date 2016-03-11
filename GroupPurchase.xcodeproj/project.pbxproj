@@ -7,7 +7,14 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		9E5F5650A636AE0A83ECC9C5 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 2DD357658EA9BE50570DA97D /* libPods.a */; };
+		7D09D1A415C88EFC130FA96E /* Pods.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C8FA803602938E4F480EA0EC /* Pods.framework */; };
+		EC9F801C1C911B2000E12672 /* PurchaseCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC9F801B1C911B2000E12672 /* PurchaseCell.swift */; };
+		EC9F801E1C911CA600E12672 /* PurchaseCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = EC9F801D1C911CA600E12672 /* PurchaseCell.xib */; };
+		EC9F80201C9149AA00E12672 /* HeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC9F801F1C9149AA00E12672 /* HeaderView.swift */; };
+		EC9F80221C9149B800E12672 /* HeaderView.xib in Resources */ = {isa = PBXBuildFile; fileRef = EC9F80211C9149B800E12672 /* HeaderView.xib */; };
+		EC9F80261C914FFF00E12672 /* BaseXibView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC9F80251C914FFF00E12672 /* BaseXibView.swift */; };
+		EC9F80291C92A30B00E12672 /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EC9F80281C92A30B00E12672 /* Alamofire.framework */; };
+		EC9F802F1C92AAF500E12672 /* LGClient.m in Sources */ = {isa = PBXBuildFile; fileRef = EC9F802E1C92AAF500E12672 /* LGClient.m */; };
 		ECF8132C1C8FCACF00623D67 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECF8132B1C8FCACF00623D67 /* AppDelegate.swift */; };
 		ECF813311C8FCACF00623D67 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ECF8132F1C8FCACF00623D67 /* Main.storyboard */; };
 		ECF813361C8FCACF00623D67 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ECF813341C8FCACF00623D67 /* LaunchScreen.storyboard */; };
@@ -33,10 +40,32 @@
 		};
 /* End PBXContainerItemProxy section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		EC9F802A1C92A32400E12672 /* Copy Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+			);
+			name = "Copy Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
-		2DD357658EA9BE50570DA97D /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		AB1C4775A3A8C6616241A380 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 		B4BAEB88FFAB78F6237E14D5 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
+		C8FA803602938E4F480EA0EC /* Pods.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		EC9F801B1C911B2000E12672 /* PurchaseCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PurchaseCell.swift; sourceTree = "<group>"; };
+		EC9F801D1C911CA600E12672 /* PurchaseCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PurchaseCell.xib; sourceTree = "<group>"; };
+		EC9F801F1C9149AA00E12672 /* HeaderView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HeaderView.swift; sourceTree = "<group>"; };
+		EC9F80211C9149B800E12672 /* HeaderView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HeaderView.xib; sourceTree = "<group>"; };
+		EC9F80251C914FFF00E12672 /* BaseXibView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseXibView.swift; sourceTree = "<group>"; };
+		EC9F80281C92A30B00E12672 /* Alamofire.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Alamofire.framework; path = "Pods/../build/Debug-iphoneos/Alamofire.framework"; sourceTree = "<group>"; };
+		EC9F802C1C92AA7E00E12672 /* CX-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "CX-Bridging-Header.h"; sourceTree = "<group>"; };
+		EC9F802D1C92AAF500E12672 /* LGClient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LGClient.h; sourceTree = "<group>"; };
+		EC9F802E1C92AAF500E12672 /* LGClient.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LGClient.m; sourceTree = "<group>"; };
 		ECF813281C8FCACF00623D67 /* GroupPurchase.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GroupPurchase.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		ECF8132B1C8FCACF00623D67 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		ECF813301C8FCACF00623D67 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -61,7 +90,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9E5F5650A636AE0A83ECC9C5 /* libPods.a in Frameworks */,
+				EC9F80291C92A30B00E12672 /* Alamofire.framework in Frameworks */,
+				7D09D1A415C88EFC130FA96E /* Pods.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -78,7 +108,8 @@
 		7536357F5E744399A832C91E /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				2DD357658EA9BE50570DA97D /* libPods.a */,
+				EC9F80281C92A30B00E12672 /* Alamofire.framework */,
+				C8FA803602938E4F480EA0EC /* Pods.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -200,6 +231,7 @@
 			isa = PBXGroup;
 			children = (
 				ECF813681C900B2E00623D67 /* Macros.swift */,
+				EC9F802C1C92AA7E00E12672 /* CX-Bridging-Header.h */,
 			);
 			path = Macros;
 			sourceTree = "<group>";
@@ -207,6 +239,8 @@
 		ECF813531C8FFBEC00623D67 /* NetWork */ = {
 			isa = PBXGroup;
 			children = (
+				EC9F802D1C92AAF500E12672 /* LGClient.h */,
+				EC9F802E1C92AAF500E12672 /* LGClient.m */,
 			);
 			path = NetWork;
 			sourceTree = "<group>";
@@ -215,6 +249,10 @@
 			isa = PBXGroup;
 			children = (
 				ECF8136F1C900E7700623D67 /* GroupPurchaseVC.swift */,
+				EC9F801B1C911B2000E12672 /* PurchaseCell.swift */,
+				EC9F801D1C911CA600E12672 /* PurchaseCell.xib */,
+				EC9F801F1C9149AA00E12672 /* HeaderView.swift */,
+				EC9F80211C9149B800E12672 /* HeaderView.xib */,
 			);
 			path = Home;
 			sourceTree = "<group>";
@@ -222,9 +260,10 @@
 		ECF8136B1C900DDD00623D67 /* Public */ = {
 			isa = PBXGroup;
 			children = (
-				ECF8136D1C900DF400623D67 /* PublicTabbarVC.swift */,
 				ECF813711C900ED200623D67 /* BaseNavigationController.swift */,
+				ECF8136D1C900DF400623D67 /* PublicTabbarVC.swift */,
 				ECF813731C9010A600623D67 /* MainViewController.swift */,
+				EC9F80251C914FFF00E12672 /* BaseXibView.swift */,
 			);
 			path = Public;
 			sourceTree = "<group>";
@@ -268,6 +307,7 @@
 				ECF813261C8FCACF00623D67 /* Resources */,
 				960D6F86FAD391DF44349619 /* Embed Pods Frameworks */,
 				59DCCB98ED0BF9346319A706 /* Copy Pods Resources */,
+				EC9F802A1C92A32400E12672 /* Copy Frameworks */,
 			);
 			buildRules = (
 			);
@@ -339,6 +379,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EC9F801E1C911CA600E12672 /* PurchaseCell.xib in Resources */,
+				EC9F80221C9149B800E12672 /* HeaderView.xib in Resources */,
 				ECF813361C8FCACF00623D67 /* LaunchScreen.storyboard in Resources */,
 				ECF8135A1C8FFC8300623D67 /* Assets.xcassets in Resources */,
 				ECF813311C8FCACF00623D67 /* Main.storyboard in Resources */,
@@ -407,12 +449,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EC9F802F1C92AAF500E12672 /* LGClient.m in Sources */,
 				ECF813741C9010A600623D67 /* MainViewController.swift in Sources */,
+				EC9F80261C914FFF00E12672 /* BaseXibView.swift in Sources */,
 				ECF813691C900B2E00623D67 /* Macros.swift in Sources */,
+				EC9F801C1C911B2000E12672 /* PurchaseCell.swift in Sources */,
 				ECF813701C900E7700623D67 /* GroupPurchaseVC.swift in Sources */,
 				ECF8137C1C90132C00623D67 /* PersonalVC.swift in Sources */,
 				ECF8137A1C90132100623D67 /* SetVC.swift in Sources */,
 				ECF813721C900ED200623D67 /* BaseNavigationController.swift in Sources */,
+				EC9F80201C9149AA00E12672 /* HeaderView.swift in Sources */,
 				ECF8132C1C8FCACF00623D67 /* AppDelegate.swift in Sources */,
 				ECF8136E1C900DF400623D67 /* PublicTabbarVC.swift in Sources */,
 				ECF813781C9012F800623D67 /* NearbyVC.swift in Sources */,
@@ -544,10 +590,15 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ENABLE_BITCODE = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/build/Debug-iphoneos",
+				);
 				INFOPLIST_FILE = GroupPurchase/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = chaox.GroupPurchase;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "/Users/fizz/Git/GroupPurchase/GroupPurchase/Expend/Macros/CX-Bridging-Header.h";
 			};
 			name = Debug;
 		};
@@ -557,10 +608,15 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ENABLE_BITCODE = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/build/Debug-iphoneos",
+				);
 				INFOPLIST_FILE = GroupPurchase/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = chaox.GroupPurchase;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "/Users/fizz/Git/GroupPurchase/GroupPurchase/Expend/Macros/CX-Bridging-Header.h";
 			};
 			name = Release;
 		};
