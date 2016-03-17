@@ -8,6 +8,7 @@
 
 import UIKit
 import Alamofire
+import SwiftyJSON
 
 class GroupPurchaseVC: UIViewController {
     
@@ -21,21 +22,32 @@ class GroupPurchaseVC: UIViewController {
         self.netRequest()
     }
     
+    var urlStr : String?
+    let client = LGClient()
+    var dic: Dictionary<String, String> = ["city": "北京", "page": "1"]
+    
     func netRequest(){
         
-//        NSMutableDictionary *dic = [NSMutableDictionary dictionaryWithObjects:@[self.initianCity,@"1"] forKeys:@[@"city",@"page"]];
-//         = [LGClient serializeURL:"http://api.dianping.com/v1/deal/find_deals" params:nil];
-        
-        Alamofire.request(.GET, "http://bubo.in/poe/poem?s=13", parameters: nil)
+      urlStr = client.serializeURL("http://api.dianping.com/v1/deal/find_deals", params: dic)
+    
+        Alamofire.request(.GET, urlStr!, parameters: nil)
             .responseJSON { response in
                 
-//                print(response.request)  // 请求对象
-//                print(response.response) // 响应对象
-//                print(response.data)     // 服务端返回的数据
-                
-                if let JSON = response.result.value {
-                    print("JSON: \(JSON)")
+                if let value = response.result.value {
+
+                    let newJson = JSON(value)
+                    
+                    let jTitle = newJson["deals"][0]["title"].string
+                    
+                    _ = DealDeatilModel(
+                    
+                        self.title = jTitle
+                    )
+                    
+                    
+                    print("JSON: \(jTitle))")
                 }
+                
                 
         }
     }
@@ -58,25 +70,20 @@ class GroupPurchaseVC: UIViewController {
     }
 }
 
-
-
 extension GroupPurchaseVC:UITableViewDelegate, UITableViewDataSource {
     
     func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
         
         let cell = tableView.dequeueReusableCellWithIdentifier("CustomCellOne", forIndexPath: indexPath) as! PurchaseCell
 
+        
         return cell
     }
     
     func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return 10
     }
-    
-    
 }
-
-
 
 
 

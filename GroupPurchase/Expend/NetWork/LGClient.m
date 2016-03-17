@@ -10,7 +10,7 @@
 
 
 @implementation LGClient
-+ (NSDictionary *)parseQueryString:(NSString *)query {
+- (NSDictionary *)parseQueryString:(NSString *)query {
     // Capacity 期望的数量
     NSMutableDictionary *dict = [[NSMutableDictionary alloc] initWithCapacity:10];
     // 把参数通过&符号拼接起来 存成数组
@@ -32,7 +32,7 @@
     return dict;
 }
 
-+ (NSString *)serializeURL:(NSString *)baseURL params:(NSDictionary *)params
+- (NSString *)serializeURL:(NSString *)baseURL params:(NSDictionary *)params
 {
     // 把基本url转换成utf8编码
     NSURL* parsedURL = [NSURL URLWithString:[baseURL stringByAddingPercentEscapesUsingEncoding:NSUTF8StringEncoding]];

@@ -10,6 +10,6 @@
 #import <CommonCrypto/CommonDigest.h>
 @interface LGClient : NSObject
 
-+ (NSString *)serializeURL:(NSString *)baseURL params:(NSDictionary *)params;
+- (NSString *)serializeURL:(NSString *)baseURL params:(NSDictionary *)params;
 
 @end

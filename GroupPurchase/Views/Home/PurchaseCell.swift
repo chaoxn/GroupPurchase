@@ -7,11 +7,21 @@
 //
 
 import UIKit
+import SnapKit
 
 class PurchaseCell: UITableViewCell {
     
     @IBOutlet weak var mainImageView: UIImageView!
     @IBOutlet weak var titleLabel: UILabel!
 
+    var purchasheModel : DealDeatilModel?
+    
+    
+    
+    
+    func setup (){
+
+        
+    }
     
 }
