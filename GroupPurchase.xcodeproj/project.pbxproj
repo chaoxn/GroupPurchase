@@ -23,9 +23,11 @@
 		EC8C80281C9A97E70021CE31 /* PurchaseCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = EC8C80201C9A97E70021CE31 /* PurchaseCell.xib */; };
 		EC8C802A1C9A996A0021CE31 /* UIImage+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC8C80291C9A996A0021CE31 /* UIImage+Extension.swift */; };
 		EC8C802C1C9A9F1D0021CE31 /* SwiftyJSON.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EC8C802B1C9A9F1D0021CE31 /* SwiftyJSON.framework */; };
+		EC8C802E1CA2725C0021CE31 /* ObjectMapper.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EC8C802D1CA2725C0021CE31 /* ObjectMapper.framework */; };
 		EC9F80291C92A30B00E12672 /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EC9F80281C92A30B00E12672 /* Alamofire.framework */; };
 		EC9F802F1C92AAF500E12672 /* LGClient.m in Sources */ = {isa = PBXBuildFile; fileRef = EC9F802E1C92AAF500E12672 /* LGClient.m */; };
 		ECBDF1F91C99592E0094B65E /* DealDeatilModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECBDF1F81C99592E0094B65E /* DealDeatilModel.swift */; };
+		ECE66A841CA3C947007ACE5C /* AlamofireObjectMapper.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ECE66A831CA3C947007ACE5C /* AlamofireObjectMapper.framework */; };
 		ECF8132C1C8FCACF00623D67 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECF8132B1C8FCACF00623D67 /* AppDelegate.swift */; };
 		ECF813311C8FCACF00623D67 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ECF8132F1C8FCACF00623D67 /* Main.storyboard */; };
 		ECF813361C8FCACF00623D67 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ECF813341C8FCACF00623D67 /* LaunchScreen.storyboard */; };
@@ -76,11 +78,13 @@
 		EC8C80201C9A97E70021CE31 /* PurchaseCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PurchaseCell.xib; sourceTree = "<group>"; };
 		EC8C80291C9A996A0021CE31 /* UIImage+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIImage+Extension.swift"; sourceTree = "<group>"; };
 		EC8C802B1C9A9F1D0021CE31 /* SwiftyJSON.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftyJSON.framework; path = "Pods/../build/Debug-iphoneos/SwiftyJSON.framework"; sourceTree = "<group>"; };
+		EC8C802D1CA2725C0021CE31 /* ObjectMapper.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ObjectMapper.framework; path = "Pods/../build/Debug-iphoneos/ObjectMapper.framework"; sourceTree = "<group>"; };
 		EC9F80281C92A30B00E12672 /* Alamofire.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Alamofire.framework; path = "Pods/../build/Debug-iphoneos/Alamofire.framework"; sourceTree = "<group>"; };
 		EC9F802C1C92AA7E00E12672 /* CX-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "CX-Bridging-Header.h"; sourceTree = "<group>"; };
 		EC9F802D1C92AAF500E12672 /* LGClient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LGClient.h; sourceTree = "<group>"; };
 		EC9F802E1C92AAF500E12672 /* LGClient.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LGClient.m; sourceTree = "<group>"; };
 		ECBDF1F81C99592E0094B65E /* DealDeatilModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DealDeatilModel.swift; sourceTree = "<group>"; };
+		ECE66A831CA3C947007ACE5C /* AlamofireObjectMapper.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AlamofireObjectMapper.framework; path = "Pods/../build/Debug-iphoneos/AlamofireObjectMapper.framework"; sourceTree = "<group>"; };
 		ECF813281C8FCACF00623D67 /* GroupPurchase.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GroupPurchase.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		ECF8132B1C8FCACF00623D67 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		ECF813301C8FCACF00623D67 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -98,6 +102,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				ECE66A841CA3C947007ACE5C /* AlamofireObjectMapper.framework in Frameworks */,
+				EC8C802E1CA2725C0021CE31 /* ObjectMapper.framework in Frameworks */,
 				EC8C802C1C9A9F1D0021CE31 /* SwiftyJSON.framework in Frameworks */,
 				EC9F80291C92A30B00E12672 /* Alamofire.framework in Frameworks */,
 				7D09D1A415C88EFC130FA96E /* Pods.framework in Frameworks */,
@@ -117,6 +123,8 @@
 		7536357F5E744399A832C91E /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				ECE66A831CA3C947007ACE5C /* AlamofireObjectMapper.framework */,
+				EC8C802D1CA2725C0021CE31 /* ObjectMapper.framework */,
 				EC8C802B1C9A9F1D0021CE31 /* SwiftyJSON.framework */,
 				EC9F80281C92A30B00E12672 /* Alamofire.framework */,
 				C8FA803602938E4F480EA0EC /* Pods.framework */,

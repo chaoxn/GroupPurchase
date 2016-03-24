@@ -15,13 +15,6 @@
                 <rect key="frame" x="0.0" y="0.0" width="371" height="101.5"/>
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
-                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="E8V-aF-gz7">
-                        <rect key="frame" x="8" y="8" width="110" height="85.5"/>
-                        <color key="backgroundColor" red="0.91764705879999997" green="0.3294117647" blue="0.078431372550000003" alpha="1" colorSpace="calibratedRGB"/>
-                        <constraints>
-                            <constraint firstAttribute="width" constant="110" id="J4I-Zf-EZF"/>
-                        </constraints>
-                    </imageView>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="X先生密室" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="REf-Nf-MGz">
                         <rect key="frame" x="128" y="8" width="79.5" height="25"/>
                         <constraints>
@@ -32,8 +25,8 @@
                         <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
                         <nil key="highlightedColor"/>
                     </label>
-                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="低至6.6折，白脱吐司面包一片" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wrd-x3-VdJ">
-                        <rect key="frame" x="128" y="36" width="229" height="30"/>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="低至6.6折，白脱吐司面包一片" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wrd-x3-VdJ">
+                        <rect key="frame" x="128" y="36" width="229" height="36"/>
                         <constraints>
                             <constraint firstAttribute="width" constant="229" id="68e-An-fWp"/>
                             <constraint firstAttribute="height" constant="30" id="WPS-Dv-ZuN"/>
@@ -67,11 +60,17 @@
                         <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
                         <nil key="highlightedColor"/>
                     </label>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="E8V-aF-gz7">
+                        <rect key="frame" x="8" y="8" width="110" height="85.5"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="110" id="J4I-Zf-EZF"/>
+                        </constraints>
+                    </imageView>
                 </subviews>
                 <constraints>
                     <constraint firstAttribute="trailingMargin" secondItem="vAJ-7p-fVL" secondAttribute="trailing" constant="6" id="2mB-22-eKH"/>
                     <constraint firstItem="wrd-x3-VdJ" firstAttribute="top" secondItem="REf-Nf-MGz" secondAttribute="bottom" constant="3" id="8Qe-M9-dvA"/>
-                    <constraint firstItem="w1y-FI-79n" firstAttribute="top" secondItem="wrd-x3-VdJ" secondAttribute="bottom" constant="6" id="AgV-5i-oEo"/>
+                    <constraint firstItem="w1y-FI-79n" firstAttribute="top" secondItem="wrd-x3-VdJ" secondAttribute="bottom" id="AgV-5i-oEo"/>
                     <constraint firstAttribute="leadingMargin" secondItem="E8V-aF-gz7" secondAttribute="leading" id="LF8-Pc-gqU"/>
                     <constraint firstAttribute="topMargin" secondItem="E8V-aF-gz7" secondAttribute="top" id="YZz-63-HPE"/>
                     <constraint firstItem="w1y-FI-79n" firstAttribute="bottom" secondItem="E8V-aF-gz7" secondAttribute="bottom" id="fdn-4D-CXy"/>
@@ -84,7 +83,10 @@
                 </constraints>
             </tableViewCellContentView>
             <connections>
+                <outlet property="currentPrice" destination="w1y-FI-79n" id="A7L-Zl-wuQ"/>
+                <outlet property="desLabel" destination="wrd-x3-VdJ" id="id3-fy-jDH"/>
                 <outlet property="mainImageView" destination="E8V-aF-gz7" id="sn3-zb-C1K"/>
+                <outlet property="saledLabel" destination="vAJ-7p-fVL" id="Bi7-kw-aSq"/>
                 <outlet property="titleLabel" destination="REf-Nf-MGz" id="vtq-bQ-e1T"/>
             </connections>
             <point key="canvasLocation" x="251.5" y="308"/>

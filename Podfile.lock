@@ -21,21 +21,29 @@ PODS:
     - AFNetworking/NSURLConnection
     - AFNetworking/NSURLSession
   - Alamofire (3.2.1)
+  - AlamofireObjectMapper (2.1.2):
+    - Alamofire (~> 3.2)
+    - ObjectMapper (~> 1.0)
   - Kingfisher (1.9.3)
+  - ObjectMapper (1.1.5)
   - SnapKit (0.19.1)
   - SwiftyJSON (2.3.2)
 
 DEPENDENCIES:
   - AFNetworking (~> 2.5.4)
   - Alamofire (~> 3.0)
+  - AlamofireObjectMapper (~> 2.1)
   - Kingfisher (~> 1.9.1)
+  - ObjectMapper (~> 1.1.5)
   - SnapKit (~> 0.19.1)
   - SwiftyJSON (~> 2.3.2)
 
 SPEC CHECKSUMS:
   AFNetworking: 05edc0ac4c4c8cf57bcf4b84be5b0744b6d8e71e
   Alamofire: f11d8624a05f5d39e0c99309b3e600a3ba64298a
+  AlamofireObjectMapper: 82391c31f23e37bdb2660da174bcf81b202da39d
   Kingfisher: 9e37d2a78a082dc123bfe8a16de65de85518daae
+  ObjectMapper: 528b1a6677a6acac7747edd508576983e76a9148
   SnapKit: eff58d6e3451bf2f482db2eccf86aecf371dc62d
   SwiftyJSON: 04ccea08915aa0109039157c7974cf0298da292a
 
