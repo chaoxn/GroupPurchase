@@ -26,6 +26,13 @@ PODS:
     - ObjectMapper (~> 1.0)
   - Kingfisher (1.9.3)
   - ObjectMapper (1.1.5)
+  - ReactiveCocoa (2.5):
+    - ReactiveCocoa/UI (= 2.5)
+  - ReactiveCocoa/Core (2.5):
+    - ReactiveCocoa/no-arc
+  - ReactiveCocoa/no-arc (2.5)
+  - ReactiveCocoa/UI (2.5):
+    - ReactiveCocoa/Core
   - SnapKit (0.19.1)
   - SwiftyJSON (2.3.2)
 
@@ -35,6 +42,7 @@ DEPENDENCIES:
   - AlamofireObjectMapper (~> 2.1)
   - Kingfisher (~> 1.9.1)
   - ObjectMapper (~> 1.1.5)
+  - ReactiveCocoa (~> 2.5)
   - SnapKit (~> 0.19.1)
   - SwiftyJSON (~> 2.3.2)
 
@@ -44,6 +52,7 @@ SPEC CHECKSUMS:
   AlamofireObjectMapper: 82391c31f23e37bdb2660da174bcf81b202da39d
   Kingfisher: 9e37d2a78a082dc123bfe8a16de65de85518daae
   ObjectMapper: 528b1a6677a6acac7747edd508576983e76a9148
+  ReactiveCocoa: e2db045570aa97c695e7aa97c2bcab222ae51f4a
   SnapKit: eff58d6e3451bf2f482db2eccf86aecf371dc62d
   SwiftyJSON: 04ccea08915aa0109039157c7974cf0298da292a
 
