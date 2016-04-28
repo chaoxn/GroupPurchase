@@ -21,14 +21,18 @@ class PurchaseCell: UITableViewCell {
         {
         didSet{
             
-            self.saledLabel.text = String(model!.purchase_count)
             self.desLabel.text = model?.Description
-            self.currentPrice.text = String(model!.current_price)
             self.titleLabel.text = model?.title
             
-//            if let str = String(model?.purchase_count) {
-//                 self.saledLabel.text = str
-//            }
+            //通过在条件判断语句中（如if、while等）把Optional值直接给一个临时常量，Swift会自动检测Optional是否包含值，如果包含值，会隐式的拆包并给那个临时常量
+            
+            if let str = model?.purchase_count {
+                 self.saledLabel.text = "已售" + String(str)
+            }
+            
+            if let strPrice = model?.current_price{
+                self.currentPrice.text = String(strPrice)
+            }
             
             if let avatar = model!.image_url , let url = NSURL(string: avatar) {
                 self.mainImageView?.kf_setImageWithURL(url)
