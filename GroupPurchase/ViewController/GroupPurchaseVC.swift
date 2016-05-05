@@ -99,7 +99,11 @@ extension GroupPurchaseVC:UITableViewDelegate, UITableViewDataSource {
     
     func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
         
+        let pdVC = PurchaseDetailVC()
         
+        navigationController?.pushViewController(pdVC, animated: true)
+        
+        print(indexPath.row)
     }
     
 }

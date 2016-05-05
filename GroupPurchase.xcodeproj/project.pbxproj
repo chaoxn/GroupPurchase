@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		7D09D1A415C88EFC130FA96E /* Pods.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C8FA803602938E4F480EA0EC /* Pods.framework */; };
+		EC5779311CD84A5A00C7E713 /* PurchaseDetailVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC5779301CD84A5A00C7E713 /* PurchaseDetailVC.swift */; };
 		EC8C800A1C9A94620021CE31 /* UIImageView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC8C80091C9A94620021CE31 /* UIImageView+Extension.swift */; };
 		EC8C80141C9A97DF0021CE31 /* GroupPurchaseVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC8C800B1C9A97DF0021CE31 /* GroupPurchaseVC.swift */; };
 		EC8C80151C9A97DF0021CE31 /* NearbyVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC8C800C1C9A97DF0021CE31 /* NearbyVC.swift */; };
@@ -63,6 +64,7 @@
 		AB1C4775A3A8C6616241A380 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 		B4BAEB88FFAB78F6237E14D5 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 		C8FA803602938E4F480EA0EC /* Pods.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		EC5779301CD84A5A00C7E713 /* PurchaseDetailVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PurchaseDetailVC.swift; sourceTree = "<group>"; };
 		EC8C80091C9A94620021CE31 /* UIImageView+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIImageView+Extension.swift"; sourceTree = "<group>"; };
 		EC8C800B1C9A97DF0021CE31 /* GroupPurchaseVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GroupPurchaseVC.swift; sourceTree = "<group>"; };
 		EC8C800C1C9A97DF0021CE31 /* NearbyVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NearbyVC.swift; sourceTree = "<group>"; };
@@ -270,6 +272,7 @@
 			children = (
 				EC8C800E1C9A97DF0021CE31 /* Public */,
 				EC8C800B1C9A97DF0021CE31 /* GroupPurchaseVC.swift */,
+				EC5779301CD84A5A00C7E713 /* PurchaseDetailVC.swift */,
 				EC8C800C1C9A97DF0021CE31 /* NearbyVC.swift */,
 				EC8C800D1C9A97DF0021CE31 /* PersonalVC.swift */,
 				EC8C80131C9A97DF0021CE31 /* SetVC.swift */,
@@ -471,6 +474,7 @@
 				EC8C80161C9A97DF0021CE31 /* PersonalVC.swift in Sources */,
 				EC8C80191C9A97DF0021CE31 /* MainViewController.swift in Sources */,
 				EC8C80271C9A97E70021CE31 /* PurchaseCell.swift in Sources */,
+				EC5779311CD84A5A00C7E713 /* PurchaseDetailVC.swift in Sources */,
 				EC8C800A1C9A94620021CE31 /* UIImageView+Extension.swift in Sources */,
 				EC8C80141C9A97DF0021CE31 /* GroupPurchaseVC.swift in Sources */,
 				EC9F802F1C92AAF500E12672 /* LGClient.m in Sources */,
